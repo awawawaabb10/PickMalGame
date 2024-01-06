@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.QuizAct"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_quiz"
+        android:layout_margin="30dp">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollGame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="45dp">
+                <LinearLayout
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true">
+                    <ImageView
+                        android:id="@+id/img_play_sound"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_sound"
+                        tools:src="@drawable/btn_sound"
+                        android:layout_marginRight="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_animal"
+                        android:layout_width="170dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/question_sapi" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/question"
+                    android:weightSum="4">
+                    <TextView
+                        android:id="@+id/option1"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_option"
+                        android:gravity="center"
+                        android:text="Option 1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/option2"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_option"
+                        android:gravity="center"
+                        android:text="Option 2"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/option3"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_option"
+                        android:gravity="center"
+                        android:text="Option 3"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/option4"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_option"
+                        android:gravity="center"
+                        android:text="Option 4"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
